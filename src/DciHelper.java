@@ -33,8 +33,8 @@ public class DciHelper {
 		Show show;
 		this.corpList = new ArrayList<Corp>();
 		for (String corp: corpNames) {
-		 
-			file = new Scanner(new File (corp));
+		
+			file = new Scanner(new File ("Corp_Data/" + corp));
 			corpName = file.nextLine();
 			Corp a = new Corp(corpName);
 			while (file.hasNext()) { // loops whole document
